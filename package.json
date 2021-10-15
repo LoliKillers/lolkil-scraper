@@ -1,6 +1,6 @@
 {
   "name": "lolkil-api",
-  "version": "1.3.0",
+  "version": "1.5.7",
   "description": "lolkil api npm package",
   "main": "index.js",
   "directories": {
