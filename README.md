@@ -4,11 +4,11 @@ Pacakage kecil npm :)
 
 # instalation
 ```shell
-npm install lolkil-api
+npm install api-lolkil
 ```
 Or via yarn
 ```shell
-yarn add lolkil-api
+yarn add api-lolkil
 ```
 
 # Usage
@@ -17,7 +17,7 @@ Example in JavaScript Lenguage!
 
 ```Stalking Instagram```
 ```javascript
-const lk = require('lolkil-api')
+const lk = require('api-lolkil')
 
 const username = 'ariasu.xyz'
 
