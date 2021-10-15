@@ -40,13 +40,6 @@ const {
   YtSearch
 } = require('./lib/yt')
 
-const query = 'whatsapp'
-
-TebakGambar()
-.then(result => {
-  console.log(result)
-})
-
 module.exports.IgStalk = IgStalk
 module.exports.IgStory = IgStory
 module.exports.IgDl = IgDl
