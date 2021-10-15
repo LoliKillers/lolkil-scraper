@@ -1,14 +1,14 @@
-# lolkil-api
+# lk-api
 
 Pacakage kecil npm :)
 
 # instalation
 ```shell
-npm install api-lolkil
+npm install lk-api
 ```
 Or via yarn
 ```shell
-yarn add api-lolkil
+yarn add lk-api
 ```
 
 # Usage
@@ -17,7 +17,7 @@ Example in JavaScript Lenguage!
 
 ```Stalking Instagram```
 ```javascript
-const lk = require('api-lolkil')
+const lk = require('lk-api')
 
 const username = 'ariasu.xyz'
 
