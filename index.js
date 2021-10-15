@@ -32,6 +32,7 @@ const { Ip } = require('./lib/ip')
 const { IpLookup } = require('./lib/iplookup')
 const { JooxPlay } = require('./lib/jooxplay')
 const { Proxy } = require('./lib/proxy')
+const { InfoNPM } = require('./lib/infonpm')
 const {
   YtdlMp3,
   YtdlMp4,
@@ -39,6 +40,14 @@ const {
   YtPlayMp4,
   YtSearch
 } = require('./lib/yt')
+const { Base } = require('./lib/base')
+const { CovidId, CovidGlobal } = require('./lib/covid')
+const { SearchRepo } = require('./lib/ghrepo')
+const { OtakuSearch, Anoboy } = require('./lib/otaku')
+const { Shortlink } = require('./lib/shortlink')
+const { Sfw, Nsfw} = require('./lib/sfwnsfw')
+
+console.log('coded by Loli Killers')
 
 module.exports.IgStalk = IgStalk
 module.exports.IgStory = IgStory
@@ -77,3 +86,12 @@ module.exports.Gempa = Gempa
 module.exports.KodePos = KodePos
 module.exports.PlayStore = PlayStore
 module.exports.TebakGambar = TebakGambar
+module.exports.Base = Base
+module.exports.CovidId = CovidId
+module.exports.CovidGlobal = CovidGlobal
+module.exports.OtakuSearch = OtakuSearch
+module.exports.SearchRepo = SearchRepo
+module.exports.InfoNPM = InfoNPM
+module.exports.Shortlink = Shortlink
+module.exports.Sfw = Sfw
+module.exports.Nsfw = Nsfw

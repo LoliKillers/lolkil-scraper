@@ -67,7 +67,78 @@ lk.IgStalk(username)
 | Kode Pos | KodePos | kota |
 | Google Play Store | PlayStore | query |
 | Tebak Gambar | TebakGambar | - |
+| Base | Base | type, text |
+| Covid Indonesia | CovidId | - |
+| Covid Global | CovidGlobal | - |
+| Otakudesu Search | OtakuSearch | query |
+| Search Repo Github | SearchRepo | repo |
+| Info Package Npm | InfoNPM | query |
+| Short Link Tiny Url | Shortlink | url |
+| Nekos Life Sfw | Sfw | endpoint |
+| Nekos Life Nsfw | Nsfw | endpoint |
 
+# Base 
+```type```
+* enc32
+* dec32
+* enc64
+* dec64
+
+# Endpoint Nekos Life Sfw & Nsfw
+```Sfw Endpint```
+* ngif
+* smug
+* cuddle
+* avatar
+* slap
+* pat
+* poke
+* feed
+* fox_girl
+* neko
+* eron
+* baka
+* kemonomimi
+* hug
+* kiss
+* wallpaper
+* tickle
+* waifu
+```Nsfw Endpoint```
+* lewdk
+* futanari
+* anal
+* pussy_jpg
+* lewd
+* trap
+* ero
+* solog
+* lewdkemo
+* solo
+* cum
+* les
+* hololewd
+* holo
+* tits
+* nsfw_neko_gif
+* eroyuri
+* holoero
+* pussy
+* Random_hentai_gif
+* yuri
+* keta
+* hentai
+* feetg
+* erok
+* cum_jpg
+* nsfw_avatar
+* erofeet
+* blowjob
+* spank
+* kuni
+* classic
+* femdom
+* boobs
 
 # NOTE
 

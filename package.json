@@ -1,6 +1,6 @@
 {
   "name": "lk-api",
-  "version": "1.5.7",
+  "version": "1.6.0",
   "description": "lolkil api npm package",
   "main": "index.js",
   "directories": {
@@ -28,8 +28,12 @@
   "homepage": "https://github.com/LoliKillers/lolkil-api#readme",
   "dependencies": {
     "axios": "^0.23.0",
+    "base-64": "^1.0.0",
+    "base32": "0.0.6",
     "cheerio": "^1.0.0-rc.10",
     "needle": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "noodlejs": "^0.3.2",
     "qs": "^6.10.1",
     "request": "^2.88.2",
     "yt-search": "^2.10.2",
