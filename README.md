@@ -27,6 +27,19 @@ lk.IgStalk(username)
 )}
 ```
 
+```Data Masjid```
+```javascript
+const lk = require('lk-api')
+
+const provinsi = 'jawa timur'
+const page = '1'
+
+lk.DataMasjid(provinsi, page)
+.then(result => {
+  console.log(result)
+})
+```
+
 # LIST
 
 | Fitur Name | Parameter | Require |
@@ -76,8 +89,63 @@ lk.IgStalk(username)
 | Short Link Tiny Url | Shortlink | url |
 | Nekos Life Sfw | Sfw | endpoint |
 | Nekos Life Nsfw | Nsfw | endpoint |
+| Bioskop Comming Soon | BioskopComingSoon | page |
+| Nekonime Search | NekonimeSearch | query |
+| Data Masjid Provinsi | DataMasjid | provinsi, page |
+| BMKG Gempa Terkini | GempaTerkini | - |
+| BMKG Info Iklim | InfoIklim | - |
+| BMKG Citra Satelit | CitraSatelit | - |
+| BMKG Prakiraan Gelombang | PrakiraanGelombang | - |
+| BMKG Prakiraan Angin | PrakiraanAngin | - |
+| BMKG Potensi Kebakaran | PotensiKebakaran | - |
+| BMKG Cuaca Penerbangan | CuacaPenerbangan | - |
+| List Surah | ListSurah | - |
+| Surah | Surah | nomor |
+| Text Pro | TxtProThunder | text |
+| ~ | TxtProBlueMetal2 | text |
+| ~ | TextProNeonLight | text
 
-# Base 
+# Data Masjid 
+
+```Daftar Provinsi Yang tersedia```
+* Semua Provinsi
+* Aceh
+* Bali
+* Banten
+* Bengkulu
+* D I Yogyakarta
+* Dki Jakarta
+* Gorontalo
+* Jambi
+* Jawa Barat
+* Jawa Tengah
+* Jawa Timur
+* Kalimantan Barat
+* Kalimantan Selatan
+* Kalimantan Tengah
+* Kalimantan Timur
+* Kalimantan Utara
+* Kep Bangka Belitung
+* Kepulauan Riau
+* Lampung
+* Maluku
+* Maluku Utara
+* Nusa Tenggara Barat
+* Nusa Tenggara Timur
+* Papua
+* Papua Barat
+* Riau
+* Sulawesi Barat
+* Sulawesi Selatan
+* Sulawesi Tengah
+* Sulawesi Tenggara
+* Sulawesi Utara
+* Sumatera Barat
+* Sumatera Selatan
+* Sumatera Utara
+
+# Base
+
 ```type```
 * enc32
 * dec32
@@ -85,7 +153,8 @@ lk.IgStalk(username)
 * dec64
 
 # Endpoint Nekos Life Sfw & Nsfw
-```Sfw Endpint```
+
+```Sfw Endpoint```
 * ngif
 * smug
 * cuddle
@@ -144,4 +213,7 @@ lk.IgStalk(username)
 # NOTE
 
 Package ini akan terus saya update, jadi tunggu update saya selanjutnya
-Untuk request fitur silahkan hubungi saya di [WhatsApp](https://wa.me/628578544512)
+Untuk request fitur/lapor bug/ingin bertanya silahkan hubungi saya di
+* [WhatsApp](https://wa.me/6285785445412)
+* [Telegram](https://t.me/Loli_Killers)
+* [Instagram](https://instagram.com/ariasu.xyz)
