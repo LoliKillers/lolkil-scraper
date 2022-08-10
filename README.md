@@ -20,6 +20,9 @@ yarn add lolkil-scraper
 | :------------: | :-----: | :---------------: | :-----: |
 | [Anoboy Search](https://62.182.83.93) | anime | anoboy_search | search |
 | [Otakudesu Search](https://otakudesu.watch) | anime | otakudesu_search | search |
+| [MAL Top Airing](https://myanimelist.net) | anime | mal_top_airing | - |
+| [MAL Top Anime](https://myanimelist.net) | anime | mal_top_anime | - |
+| [MAL Search Anime](https://myanimelist.net) | anime | mal_search_anime | search |
 
 Example Code
 
@@ -44,6 +47,41 @@ lol.anime.anoboy_search(search)
 var search = "Jujutsu"
 
 lol.anime.otakudesu_search(search)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```My Anime List Top Airing```
+```javascript
+lol.anime.mal_top_airing()
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```My Anime List Top Anime```
+```javascript
+lol.anime.mal_top_anime()
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```My Anime List Search Anime```
+```javascript
+var search = 'One Piece'
+
+lol.anime.mal_search_anime(search)
 .then(res => {
   console.log(res)
 })
