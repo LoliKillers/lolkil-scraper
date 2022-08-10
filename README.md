@@ -23,6 +23,8 @@ yarn add lolkil-scraper
 | [MAL Top Airing](https://myanimelist.net) | anime | mal_top_airing | - |
 | [MAL Top Anime](https://myanimelist.net) | anime | mal_top_anime | - |
 | [MAL Search Anime](https://myanimelist.net) | anime | mal_search_anime | search |
+| [MAL Search Manga](https://myanimelist.net) | anime | mal_search_manga | search |
+| [MAL Search Character](https://myanimelist.net) | anime | mal_search_character | search |
 
 Example Code
 
@@ -82,6 +84,19 @@ lol.anime.mal_top_anime()
 var search = 'One Piece'
 
 lol.anime.mal_search_anime(search)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```My Anime List Search Manga```
+```javascript
+var search = 'Luffy'
+
+lol.anime.mal_search_character(search)
 .then(res => {
   console.log(res)
 })
