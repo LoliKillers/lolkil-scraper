@@ -14,6 +14,8 @@ yarn add lolkil-scraper
 # List Scrape
 
 * [Anime](#anime)
+* [Download](#downloader)
+* [Convert](#convert)
 
 ### Anime 
 | name | type | formats | require |
@@ -29,10 +31,10 @@ yarn add lolkil-scraper
 Example Code
 
 ```javascript
-var lol = require('lolkill-scraper');
+var lol = require('lolkil-scraper');
 ```
-<details>
-<summary> <b>Anoboy Search</b></summary><br/>
+
+```Anoboy Search```
 ```javascript
 var search = 'One Piece'
 
@@ -44,9 +46,8 @@ lol.anime.anoboy_search(search)
   console.log(err)
 })
 ```
-</details>
-<details>
-<summary><b>Otakudesu Search</b></summary><br/>
+
+```Otakudesu Search```
 ```javascript
 var search = "Jujutsu"
 
@@ -58,9 +59,8 @@ lol.anime.otakudesu_search(search)
   console.log(err)
 })
 ```
-</details>
-<details>
-<summary><b>MAL Top Airing</b></summary><br/>
+
+```My Anime List Top Airing```
 ```javascript
 lol.anime.mal_top_airing()
 .then(res => {
@@ -70,9 +70,8 @@ lol.anime.mal_top_airing()
   console.log(err)
 })
 ```
-</details>
-<details>
-<summary><b>MAL Top Anime</b></summary><br/>
+
+```My Anime List Top Anime```
 ```javascript
 lol.anime.mal_top_anime()
 .then(res => {
@@ -82,9 +81,8 @@ lol.anime.mal_top_anime()
   console.log(err)
 })
 ```
-</details>
-<details>
-<summary><b>MAL Search Anime</b></summary><br/>
+
+```My Anime List Search Anime```
 ```javascript
 var search = 'One Piece'
 
@@ -96,9 +94,8 @@ lol.anime.mal_search_anime(search)
   console.log(err)
 })
 ```
-</details>
-<details>
-<summary><b>MAL Search Manga</b></summary><br/>
+
+```My Anime List Search Manga```
 ```javascript
 var search = 'Luffy'
 
@@ -110,7 +107,55 @@ lol.anime.mal_search_character(search)
   console.log(err)
 })
 ```
-</details>
+
+### Downloader
+| name | type | formats | require |
+| :-----: | :-----: | :-----: | :-----: |
+| [TikTok](https://vt.tiktok.com) | download | tiktok | url |
+
+Example Code
+
+```javascript
+var lol = require('lolkil-scraper')
+```
+
+```Tik Tok```
+```javascript
+var url = 'https://vt.tiktok.com/ZSR2vqUFY/?k=1'
+
+lol.download.tiktok(url)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+### Convert
+| name | type | formats | require |
+| :-----: | :-----: | :-----: | :-----: |
+| [Emoji To Png](https://emojipedia.org) | convert | emoji_to_png | emoji |
+
+Example Code
+
+```javascript
+var lol = require('lolkil-scraper')
+```
+
+```Emoji To Png```
+```javascript
+var emoji = '🤑'
+
+lol.convert.emoji_to_png(emoji)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
 
 # NOTE
 
