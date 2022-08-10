@@ -31,7 +31,8 @@ Example Code
 ```javascript
 var lol = require('lolkill-scraper');
 ```
-```Anoboy Search```
+<details>
+<summary> <b>Anoboy Search</b></summary><br/>
 ```javascript
 var search = 'One Piece'
 
@@ -43,8 +44,9 @@ lol.anime.anoboy_search(search)
   console.log(err)
 })
 ```
-
-```Otakudesu Search```
+</details>
+<details>
+<summary><b>Otakudesu Search</b></summary><br/>
 ```javascript
 var search = "Jujutsu"
 
@@ -56,8 +58,9 @@ lol.anime.otakudesu_search(search)
   console.log(err)
 })
 ```
-
-```My Anime List Top Airing```
+</details>
+<details>
+<summary><b>MAL Top Airing</b></summary><br/>
 ```javascript
 lol.anime.mal_top_airing()
 .then(res => {
@@ -67,8 +70,9 @@ lol.anime.mal_top_airing()
   console.log(err)
 })
 ```
-
-```My Anime List Top Anime```
+</details>
+<details>
+<summary><b>MAL Top Anime</b></summary><br/>
 ```javascript
 lol.anime.mal_top_anime()
 .then(res => {
@@ -78,8 +82,9 @@ lol.anime.mal_top_anime()
   console.log(err)
 })
 ```
-
-```My Anime List Search Anime```
+</details>
+<details>
+<summary><b>MAL Search Anime</b></summary><br/>
 ```javascript
 var search = 'One Piece'
 
@@ -91,8 +96,9 @@ lol.anime.mal_search_anime(search)
   console.log(err)
 })
 ```
-
-```My Anime List Search Manga```
+</details>
+<details>
+<summary><b>MAL Search Manga</b></summary><br/>
 ```javascript
 var search = 'Luffy'
 
@@ -104,6 +110,7 @@ lol.anime.mal_search_character(search)
   console.log(err)
 })
 ```
+</details>
 
 # NOTE
 
