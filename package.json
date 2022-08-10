@@ -1,0 +1,33 @@
+{
+  "name": "lolkil-scraper",
+  "version": "1.0.0",
+  "description": "npm package scraped",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LoliKillers/lolkil-scraper.git"
+  },
+  "keywords": [
+    "api",
+    "npm",
+    "scrape",
+    "nodejs",
+    "javscript",
+    "yarn"
+  ],
+  "author": "LoliKillers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoliKillers/lolkil-scraper/issues"
+  },
+  "homepage": "https://github.com/LoliKillers/lolkil-scraper#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "rootpath": "^0.1.2"
+  }
+}
