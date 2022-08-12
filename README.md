@@ -3,12 +3,19 @@
 npm package scraper to complete your app!
 
 # instalation
+
+Use the stable version:
 ```shell
 npm install lolkil-scraper
 ```
 Or via yarn
 ```shell
 yarn add lolkil-scraper
+```
+
+Use the unstable version (no guarantee of stability, but latest fixes + features)
+```sh
+yarn add github:LoliKillers/xyzapi
 ```
 
 # List Scrape
@@ -136,6 +143,7 @@ lol.download.tiktok(url)
 | name | type | formats | require |
 | :-----: | :-----: | :-----: | :-----: |
 | [Emoji To Png](https://emojipedia.org) | convert | emoji_to_png | emoji |
+| [Google Text To Speech](https://translate.google.com) | convert | gtts | text & language code |
 
 Example Code
 
@@ -148,6 +156,20 @@ var lol = require('lolkil-scraper')
 var emoji = '🤑'
 
 lol.convert.emoji_to_png(emoji)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```Google Text To Speech```
+```javascript
+var text = 'Hallo World'
+var language = 'en' // Please check the list of language codes at https://cloud.google.com/speech-to-text/docs/languages
+
+lol.convert.gtts(text, language)
 .then(res => {
   console.log(res)
 })
