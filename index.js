@@ -1,3 +1,4 @@
+"use strict";
 require('rootpath')();
 module.exports.anime = require('lib/anime/index.js');
 module.exports.download = require('lib/download/index.js');
