@@ -23,6 +23,7 @@ yarn add github:LoliKillers/xyzapi
 * [Anime](#anime)
 * [Download](#downloader)
 * [Convert](#convert)
+* [Information](#information)
 
 ### Anime 
 | name | type | formats | require |
@@ -178,7 +179,26 @@ lol.convert.gtts(text, language)
 })
 ```
 
+### Information
+| name | type | formats | require |
+| :------------: | :------------: | :------------: | :------------: |
+| [Earthquake Info](https://www.bmkg.go.id) | info | gempa_terkini | - |
 
+Example Code
+```javascript
+var lol = require('lolkil-scraper')
+```
+
+```Earthquake Info```
+```javascript
+lol.info.gempa_terkini()
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
 # NOTE
 
 I will continue to update this package, so wait for my next update
