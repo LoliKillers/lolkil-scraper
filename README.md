@@ -123,6 +123,10 @@ lol.anime.mal_search_character(search)
 | name | type | formats | require |
 | :-----: | :-----: | :-----: | :-----: |
 | [TikTok](https://vt.tiktok.com) | download | tiktok | url |
+| [YouTube DL Mp3](https://www.youtube.com) | download | youtube_dl_mp3 | search |
+| [YouTube DL Mp4](https://www.youtube.com) | download | youtube_dl_mp4 | search |
+| [YouTube Play Mp3](https://www.youtube.com) | download | youtube_play_mp3 | search |
+| [YouTube Play Mp4](https://www.youtube.com) | download | youtube_play_mp4 | search |
 
 Example Code
 
@@ -135,6 +139,54 @@ var lol = require('lolkil-scraper')
 var url = 'https://vt.tiktok.com/ZSR2vqUFY/?k=1'
 
 lol.download.tiktok(url)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+```YouTube Download Mp3```
+```javascript
+var url = 'https://youtu.be/hrX2xbeKIJA'
+
+lol.download.youtube_dl_mp3(url)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+```YouTube Download Mp4```
+```javascript
+var url = 'https://youtu.be/hrX2xbeKIJA'
+
+lol.download.youtube_dl_mp4(url)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+```YouTube Play Mp3```
+```javascript
+var search = 'One Piece'
+
+lol.download.youtube_play_mp3(search)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+```YouTube Play Mp4```
+```javascript
+var search = 'One Piece'
+
+lol.download.youtube_play_mp4(search)
 .then(res => {
   console.log(res)
 })
@@ -253,6 +305,7 @@ lol.stalk.github(username)
 | name | type | formats | require |
 | :------------: | :------------: | :------------: | :------------: |
 | [Pinterest](https://id.pinterest.com) | image | pinterest | search |
+| [Wallpaper Flare](https://www.wallpaperflare.com) | image | wallpaperflare | search |
 
 Example Code
 ```javascript
@@ -264,6 +317,19 @@ var lol = require('lolkil-scraper')
 var search = 'Loli'
 
 lol.image.pinterest(search)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```Wallpaper Flare```
+```javascript
+var search = 'Loli'
+
+lol.image.wallpaperflare(search)
 .then(res => {
   console.log(res)
 })
