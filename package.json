@@ -1,6 +1,6 @@
 {
   "name": "lolkil-scraper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "npm package scraped",
   "main": "index.js",
   "scripts": {

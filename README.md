@@ -24,6 +24,9 @@ yarn add github:LoliKillers/xyzapi
 * [Download](#downloader)
 * [Convert](#convert)
 * [Information](#information)
+* [Searching](#search)
+* [Stalk](#stalk)
+* [Image](#pinterest)
 
 ### Anime 
 | name | type | formats | require |
@@ -199,6 +202,76 @@ lol.info.gempa_terkini()
   console.log(err)
 })
 ```
+
+### Search
+| name | type | formats | require |
+| :------------: | :------------: | :------------: | :------------: |
+| [Github Repo](https://github.com) | search | github_repo | repo |
+
+Example Code
+```javascript
+var lol = require('lolkil-scraper')
+```
+
+```Github Repository```
+```javascript
+var repo = 'lolkil-scraper'
+
+lol.search.github_repo(repo)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+### Stalk
+| name | type | formats | require |
+| :------------: | :------------: | :------------: | :------------: |
+| [Github Stalk](https://github.com) | stalk | github | username |
+
+Example Code
+```javascript
+var lol = require('lolkil-scraper')
+```
+
+```Github Stalk```
+```javascript
+var username = 'LoliKillers'
+
+lol.stalk.github(username)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+### Image
+| name | type | formats | require |
+| :------------: | :------------: | :------------: | :------------: |
+| [Pinterest](https://id.pinterest.com) | image | pinterest | search |
+
+Example Code
+```javascript
+var lol = require('lolkil-scraper')
+```
+
+```Pinterest```
+```javascript
+var search = 'Loli'
+
+lol.image.pinterest(search)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
 # NOTE
 
 I will continue to update this package, so wait for my next update
