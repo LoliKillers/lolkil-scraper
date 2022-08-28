@@ -6,3 +6,4 @@ module.exports.info = require('./lib/info/index.js');
 module.exports.image = require('./lib/image/index.js');
 module.exports.stalk = require('./lib/stalk/index.js');
 module.exports.search = require('./lib/search/index.js');
+module.exports.hentai = require('./lib/hentai/index.js');
