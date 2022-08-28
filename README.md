@@ -27,6 +27,7 @@ yarn add github:LoliKillers/xyzapi
 * [Searching](#search)
 * [Stalk](#stalk)
 * [Image](#pinterest)
+* [Hentai](#hentai)
 
 ### Anime 
 | name | type | formats | require |
@@ -330,6 +331,41 @@ lol.image.pinterest(search)
 var search = 'Loli'
 
 lol.image.wallpaperflare(search)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+### Hentai
+| name | type | formats | require |
+| :------------: | :------------: | :------------: | :------------: |
+| [Search](https://hentai.tv) | hentai | search | search |
+| [Random](https://hentai.tv) | hentai | random | - |
+
+Example Code
+```javascript
+var lol = require('lolkil-scraper')
+```
+
+```Pinterest```
+```javascript
+var search = 'Loli'
+
+lol.hentai.search(search)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```Wallpaper Flare```
+```javascript
+lol.hentai.random()
 .then(res => {
   console.log(res)
 })
