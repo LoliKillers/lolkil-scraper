@@ -48,9 +48,7 @@ var lolkilScraper = require('lolkil-scraper');
 
 ```Anoboy Search```
 ```javascript
-var search = 'One Piece'
-
-lolkilScraper.anime.anoboy_search(search)
+lolkilScraper.anime.anoboy_search('one piece')
 .then(res => {
     console.log(res)
 })
@@ -61,9 +59,7 @@ lolkilScraper.anime.anoboy_search(search)
 
 ```Otakudesu Search```
 ```javascript
-var search = "Jujutsu"
-
-lolkilScraper.anime.otakudesu_search(search)
+lolkilScraper.anime.otakudesu_search('one piece')
 .then(res => {
   console.log(res)
 })
@@ -96,9 +92,7 @@ lolkilScraper.anime.mal_top_anime()
 
 ```My Anime List Search Anime```
 ```javascript
-var search = 'One Piece'
-
-lolkilScraper.anime.mal_search_anime(search)
+lolkilScraper.anime.mal_search_anime('one piece')
 .then(res => {
   console.log(res)
 })
@@ -109,9 +103,7 @@ lolkilScraper.anime.mal_search_anime(search)
 
 ```My Anime List Search Manga```
 ```javascript
-var search = 'Luffy'
-
-lolkilScraper.anime.mal_search_character(search)
+lolkilScraper.anime.mal_search_character('luffy')
 .then(res => {
   console.log(res)
 })
@@ -137,9 +129,7 @@ var lolkilScraper = require('lolkil-scraper')
 
 ```Tik Tok```
 ```javascript
-var url = 'https://vt.tiktok.com/ZSR2vqUFY/?k=1'
-
-lolkilScraper.download.tiktok(url)
+lolkilScraper.download.tiktok('https://vt.tiktok.com/ZSR2vqUFY/?k=1')
 .then(res => {
   console.log(res)
 })
@@ -149,9 +139,7 @@ lolkilScraper.download.tiktok(url)
 ```
 ```YouTube Download Mp3```
 ```javascript
-var url = 'https://youtu.be/hrX2xbeKIJA'
-
-lolkilScraper.download.youtube_dl_mp3(url)
+lolkilScraper.download.youtube_dl_mp3('https://youtu.be/hrX2xbeKIJA')
 .then(res => {
   console.log(res)
 })
@@ -161,9 +149,7 @@ lolkilScraper.download.youtube_dl_mp3(url)
 ```
 ```YouTube Download Mp4```
 ```javascript
-var url = 'https://youtu.be/hrX2xbeKIJA'
-
-lolkilScraper.download.youtube_dl_mp4(url)
+lolkilScraper.download.youtube_dl_mp4('https://youtu.be/hrX2xbeKIJA')
 .then(res => {
   console.log(res)
 })
@@ -173,9 +159,7 @@ lolkilScraper.download.youtube_dl_mp4(url)
 ```
 ```YouTube Play Mp3```
 ```javascript
-var search = 'One Piece'
-
-lolkilScraper.download.youtube_play_mp3(search)
+lolkilScraper.download.youtube_play_mp3('ricko pillow')
 .then(res => {
   console.log(res)
 })
@@ -185,9 +169,7 @@ lolkilScraper.download.youtube_play_mp3(search)
 ```
 ```YouTube Play Mp4```
 ```javascript
-var search = 'One Piece'
-
-lolkilScraper.download.youtube_play_mp4(search)
+lolkilScraper.download.youtube_play_mp4('ricko pillow')
 .then(res => {
   console.log(res)
 })
@@ -210,9 +192,7 @@ var lolkilScraper = require('lolkil-scraper')
 
 ```Emoji To Png```
 ```javascript
-var emoji = '🤑'
-
-lolkilScraper.convert.emoji_to_png(emoji)
+lolkilScraper.convert.emoji_to_png('💸')
 .then(res => {
   console.log(res)
 })
@@ -223,10 +203,7 @@ lolkilScraper.convert.emoji_to_png(emoji)
 
 ```Google Text To Speech```
 ```javascript
-var text = 'Hallo World'
-var language = 'en' // Please check the list of language codes at https://cloud.google.com/speech-to-text/docs/languages
-
-lolkilScraper.convert.gtts(text, language)
+lolkilScraper.convert.gtts('Hello World', 'en')
 .then(res => {
   console.log(res)
 })
@@ -261,6 +238,7 @@ lolkilScraper.info.gempa_terkini()
 | :------------: | :------------: | :------------: | :------------: |
 | [Github Repo](https://github.com) | search | github_repo | repo |
 | [Film](http://167.99.31.48/) | search | film | film |
+| [Kode Pos](https://carikodepos.com/) | search | kodepos | country |
 
 Example Code
 ```javascript
@@ -269,9 +247,7 @@ var lolkilScraper = require('lolkil-scraper')
 
 ```Github Repository```
 ```javascript
-var repo = 'lolkil-scraper'
-
-lolkilScraper.search.github_repo(repo)
+lolkilScraper.search.github_repo('lolkil-scraper')
 .then(res => {
   console.log(res)
 })
@@ -282,9 +258,18 @@ lolkilScraper.search.github_repo(repo)
 
 ```Film```
 ```javascript
-var lolkilScraper = 'marvel'
+lolkilScraper.search.film('marvel')
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
 
-lolkilScraper.search.film(repo)
+```Kode Pos```
+```javascript
+lolkilScraper.search.kodepos('ponorogo')
 .then(res => {
   console.log(res)
 })
@@ -305,9 +290,7 @@ var lolkilScraper = require('lolkil-scraper')
 
 ```Github Stalk```
 ```javascript
-var username = 'LoliKillers'
-
-lolkilScraper.stalk.github(username)
+lolkilScraper.stalk.github('LoliKillers)
 .then(res => {
   console.log(res)
 })
@@ -329,9 +312,7 @@ var lolkilScraper = require('lolkil-scraper')
 
 ```Pinterest```
 ```javascript
-var search = 'Loli'
-
-lolkilScraper.image.pinterest(search)
+lolkilScraper.image.pinterest('loli')
 .then(res => {
   console.log(res)
 })
@@ -342,9 +323,7 @@ lolkilScraper.image.pinterest(search)
 
 ```Wallpaper Flare```
 ```javascript
-var search = 'Loli'
-
-lolkilScraper.image.wallpaperflare(search)
+lolkilScraper.image.wallpaperflare('loli')
 .then(res => {
   console.log(res)
 })
@@ -366,9 +345,7 @@ var lolkilScraper = require('lolkil-scraper')
 
 ```Search Hentai```
 ```javascript
-var search = 'Loli'
-
-lolkilScraper.hentai.search(search)
+lolkilScraper.hentai.search('loli')
 .then(res => {
   console.log(res)
 })
