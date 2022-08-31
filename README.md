@@ -15,7 +15,7 @@ yarn add lolkil-scraper
 
 Use the unstable version (no guarantee of stability, but latest fixes + features)
 ```sh
-yarn add github:LoliKillers/xyzapi
+yarn add github:LoliKillers/lolkil-scraper
 ```
 
 # List Scrape
@@ -43,14 +43,14 @@ yarn add github:LoliKillers/xyzapi
 Example Code
 
 ```javascript
-var lol = require('lolkil-scraper');
+var lolkilScraper = require('lolkil-scraper');
 ```
 
 ```Anoboy Search```
 ```javascript
 var search = 'One Piece'
 
-lol.anime.anoboy_search(search)
+lolkilScraper.anime.anoboy_search(search)
 .then(res => {
     console.log(res)
 })
@@ -63,7 +63,7 @@ lol.anime.anoboy_search(search)
 ```javascript
 var search = "Jujutsu"
 
-lol.anime.otakudesu_search(search)
+lolkilScraper.anime.otakudesu_search(search)
 .then(res => {
   console.log(res)
 })
@@ -74,7 +74,7 @@ lol.anime.otakudesu_search(search)
 
 ```My Anime List Top Airing```
 ```javascript
-lol.anime.mal_top_airing()
+lolkilScraper.anime.mal_top_airing()
 .then(res => {
   console.log(res)
 })
@@ -85,7 +85,7 @@ lol.anime.mal_top_airing()
 
 ```My Anime List Top Anime```
 ```javascript
-lol.anime.mal_top_anime()
+lolkilScraper.anime.mal_top_anime()
 .then(res => {
   console.log(res)
 })
@@ -98,7 +98,7 @@ lol.anime.mal_top_anime()
 ```javascript
 var search = 'One Piece'
 
-lol.anime.mal_search_anime(search)
+lolkilScraper.anime.mal_search_anime(search)
 .then(res => {
   console.log(res)
 })
@@ -111,7 +111,7 @@ lol.anime.mal_search_anime(search)
 ```javascript
 var search = 'Luffy'
 
-lol.anime.mal_search_character(search)
+lolkilScraper.anime.mal_search_character(search)
 .then(res => {
   console.log(res)
 })
@@ -132,14 +132,14 @@ lol.anime.mal_search_character(search)
 Example Code
 
 ```javascript
-var lol = require('lolkil-scraper')
+var lolkilScraper = require('lolkil-scraper')
 ```
 
 ```Tik Tok```
 ```javascript
 var url = 'https://vt.tiktok.com/ZSR2vqUFY/?k=1'
 
-lol.download.tiktok(url)
+lolkilScraper.download.tiktok(url)
 .then(res => {
   console.log(res)
 })
@@ -151,7 +151,7 @@ lol.download.tiktok(url)
 ```javascript
 var url = 'https://youtu.be/hrX2xbeKIJA'
 
-lol.download.youtube_dl_mp3(url)
+lolkilScraper.download.youtube_dl_mp3(url)
 .then(res => {
   console.log(res)
 })
@@ -163,7 +163,7 @@ lol.download.youtube_dl_mp3(url)
 ```javascript
 var url = 'https://youtu.be/hrX2xbeKIJA'
 
-lol.download.youtube_dl_mp4(url)
+lolkilScraper.download.youtube_dl_mp4(url)
 .then(res => {
   console.log(res)
 })
@@ -175,7 +175,7 @@ lol.download.youtube_dl_mp4(url)
 ```javascript
 var search = 'One Piece'
 
-lol.download.youtube_play_mp3(search)
+lolkilScraper.download.youtube_play_mp3(search)
 .then(res => {
   console.log(res)
 })
@@ -187,7 +187,7 @@ lol.download.youtube_play_mp3(search)
 ```javascript
 var search = 'One Piece'
 
-lol.download.youtube_play_mp4(search)
+lolkilScraper.download.youtube_play_mp4(search)
 .then(res => {
   console.log(res)
 })
@@ -205,14 +205,14 @@ lol.download.youtube_play_mp4(search)
 Example Code
 
 ```javascript
-var lol = require('lolkil-scraper')
+var lolkilScraper = require('lolkil-scraper')
 ```
 
 ```Emoji To Png```
 ```javascript
 var emoji = '🤑'
 
-lol.convert.emoji_to_png(emoji)
+lolkilScraper.convert.emoji_to_png(emoji)
 .then(res => {
   console.log(res)
 })
@@ -226,7 +226,7 @@ lol.convert.emoji_to_png(emoji)
 var text = 'Hallo World'
 var language = 'en' // Please check the list of language codes at https://cloud.google.com/speech-to-text/docs/languages
 
-lol.convert.gtts(text, language)
+lolkilScraper.convert.gtts(text, language)
 .then(res => {
   console.log(res)
 })
@@ -242,12 +242,12 @@ lol.convert.gtts(text, language)
 
 Example Code
 ```javascript
-var lol = require('lolkil-scraper')
+var lolkilScraper = require('lolkil-scraper')
 ```
 
 ```Earthquake Info```
 ```javascript
-lol.info.gempa_terkini()
+lolkilScraper.info.gempa_terkini()
 .then(res => {
   console.log(res)
 })
@@ -260,17 +260,31 @@ lol.info.gempa_terkini()
 | name | type | formats | require |
 | :------------: | :------------: | :------------: | :------------: |
 | [Github Repo](https://github.com) | search | github_repo | repo |
+| [Film](http://167.99.31.48/) | search | film | film |
 
 Example Code
 ```javascript
-var lol = require('lolkil-scraper')
+var lolkilScraper = require('lolkil-scraper')
 ```
 
 ```Github Repository```
 ```javascript
 var repo = 'lolkil-scraper'
 
-lol.search.github_repo(repo)
+lolkilScraper.search.github_repo(repo)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+```
+
+```Film```
+```javascript
+var lolkilScraper = 'marvel'
+
+lolkilScraper.search.film(repo)
 .then(res => {
   console.log(res)
 })
@@ -286,14 +300,14 @@ lol.search.github_repo(repo)
 
 Example Code
 ```javascript
-var lol = require('lolkil-scraper')
+var lolkilScraper = require('lolkil-scraper')
 ```
 
 ```Github Stalk```
 ```javascript
 var username = 'LoliKillers'
 
-lol.stalk.github(username)
+lolkilScraper.stalk.github(username)
 .then(res => {
   console.log(res)
 })
@@ -310,14 +324,14 @@ lol.stalk.github(username)
 
 Example Code
 ```javascript
-var lol = require('lolkil-scraper')
+var lolkilScraper = require('lolkil-scraper')
 ```
 
 ```Pinterest```
 ```javascript
 var search = 'Loli'
 
-lol.image.pinterest(search)
+lolkilScraper.image.pinterest(search)
 .then(res => {
   console.log(res)
 })
@@ -330,7 +344,7 @@ lol.image.pinterest(search)
 ```javascript
 var search = 'Loli'
 
-lol.image.wallpaperflare(search)
+lolkilScraper.image.wallpaperflare(search)
 .then(res => {
   console.log(res)
 })
@@ -347,14 +361,14 @@ lol.image.wallpaperflare(search)
 
 Example Code
 ```javascript
-var lol = require('lolkil-scraper')
+var lolkilScraper = require('lolkil-scraper')
 ```
 
-```Pinterest```
+```Search Hentai```
 ```javascript
 var search = 'Loli'
 
-lol.hentai.search(search)
+lolkilScraper.hentai.search(search)
 .then(res => {
   console.log(res)
 })
@@ -363,9 +377,9 @@ lol.hentai.search(search)
 })
 ```
 
-```Wallpaper Flare```
+```Random Hentai```
 ```javascript
-lol.hentai.random()
+lolkilScraper.hentai.random()
 .then(res => {
   console.log(res)
 })
