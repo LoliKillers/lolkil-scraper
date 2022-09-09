@@ -28,6 +28,7 @@ yarn add github:LoliKillers/lolkil-scraper
 * [Stalk](#stalk)
 * [Image](#pinterest)
 * [Hentai](#hentai)
+* [PornHub](#pornhub)
 
 ### Anime 
 | name | type | formats | require |
@@ -364,6 +365,108 @@ lolkilScraper.hentai.random()
   console.log(err)
 })
 ```
+
+### PornHub
+| name | type | formats | require |
+| :------------: | :------------: | :------------: | :------------: |
+| [Download](https://www.pornhub.com) | pornhub | download | url |
+| [Search](https://www.pornhub.com) | pornhub | search | text |
+| [Model/Artis](https://www.pornhub.com) | pornhub | model | text |
+| [Random/Video](https://www.pornhub.com) | pornhub | video | - |
+
+```PornHub Downloader```
+```javascript
+lolkilScraper.pornhub.download('https://www.pornhub.com/view_video.php?viewkey=ph5e3d6b6065a1a')
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+
+//untuk result json lebih lengkap anda bisa menggunakan kata kunci
+/*
+const url = 'https://www.pornhub.com/view_video.php?viewkey=ph5e3d6b6065a1a'
+const key = ['title', 'download_urls', 'views', 'descripton']
+lolkilScraper.pornhub.download(url, key)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(error)
+})
+*/
+```
+
+```PornHub Search```
+```javascript
+lolkilScraper.pornhub.search('japanese')
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+//untuk result json lebih lengkap anda bisa menggunakan kata kunci
+/*
+const search = 'japanese'
+const key = ['title', 'views', 'descripton']
+const page = 1
+lolkilScraper.pornhub.search(search, key, page)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(error)
+})
+*/
+```
+```PornHub Model/Artist```
+```javascript
+lolkilScraper.pornhub.model('mia')
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+//untuk result json lebih lengkap anda bisa menggunakan kata kunci
+/*
+const model = 'mia'
+const key = ['title', 'rank_model', 'descripton']
+lolkilScraper.pornhub.model(model, key)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(error)
+})
+*/
+```
+
+```PornHub Video/Random```
+```javascript
+lolkilScraper.pornhub.video()
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(err)
+})
+//untuk result json lebih lengkap anda bisa menggunakan kata kunci
+/*
+const key = ['title', 'views', 'descripton']
+const page = 1
+lolkilScraper.pornhub.model(key, page)
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.log(error)
+})
+*/
+```
+
 
 # NOTE
 
