@@ -1,5 +1,7 @@
 # lolkil-scraper
 
+![Alt](https://repobeats.axiom.co/api/embed/5c2d370c65fd45336f141032f268516f722dca7c.svg "Repobeats analytics image")
+
 npm package scraper to complete your app!
 
 # instalation
