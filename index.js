@@ -8,3 +8,4 @@ module.exports.stalk = require('./lib/stalk/index.js');
 module.exports.search = require('./lib/search/index.js');
 module.exports.hentai = require('./lib/hentai/index.js');
 module.exports.pornhub = require('./lib/pornhub/index.js');
+module.exports.news = require('./lib/news/index.js');
