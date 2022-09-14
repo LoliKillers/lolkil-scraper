@@ -33,6 +33,7 @@ yarn add github:LoliKillers/lolkil-scraper
 * [Hentai](#hentai)
 * [PornHub](#pornhub)
 * [News](#news)
+* [Text Pro](#textpro)
 
 Usage
 ```js
@@ -1434,7 +1435,8 @@ lolkilScraper.pornhub.video() //lolkilScraper.pornhub.video(key, page)
 
 > #### Required Parameters
 > - (kategory) *type **String***
-> *list kategori (terkini,terpopuler,global)*
+>
+> *list kategori (terkini, terpopuler, global)*
 
 ```js
 lolkilScraper.news.kompas_news('terkini')
@@ -1470,6 +1472,35 @@ lolkilScraper.news.kompas_news('terkini')
   ]
 }
 ```
+</details>
+
+### Text Pro
+
+<details><summary><b>Gradient Neon Light Text</b></summary><br>
+
+> #### Required Parameters
+> - (text) *type **String***
+
+```js
+lolkilScraper.textpro.gradient_neon_light_text('Loli Killers')
+.then(response => {
+  console.log(response)
+})
+.catch(error => {
+  //error message
+}
+```
+#### output
+```json
+{
+  result: {
+    img: 'https://textpro.me/images/user_image/2022/09/632136e21c724.jpg'
+  }
+}
+```
+#### Example
+[Lk](https://telegra.ph/file/ea71435e0f4aafbbfe9dc.jpg)
+
 </details>
 
 # NOTE
