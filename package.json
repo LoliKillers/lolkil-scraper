@@ -29,7 +29,7 @@
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.12",
     "google-tts-api": "^2.0.2",
-    "got": "11.8.5",
+    "got": "12.4.1",
     "html-entities": "2.3.3",
     "is-emoji": "^0.1.1",
     "jsdom": "^20.0.0",
