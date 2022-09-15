@@ -1476,13 +1476,19 @@ lolkilScraper.news.kompas_news('terkini')
 
 ### Text Pro
 
-<details><summary><b>Gradient Neon Light Text</b></summary><br>
+<details><summary><b>Light Style</b></summary><br>
 
 > #### Required Parameters
+> - (type) *type **String***
+>
+> lits type ['neon_text_effect','holographic_3d','galaxy_style','technology_neon_light','neon_devil_wings','glitch_text_effect','impressive_glitch','neon_light_text_3d','thunder_text_effect','neon_light_on_brick_wall','neon_light_glitch','light_glow_sliced','summer_neon_light','neon_light_blackpink_logo', 'gradient_neon_light'];
 > - (text) *type **String***
 
 ```js
-lolkilScraper.textpro.gradient_neon_light_text('Loli Killers')
+var type = 'holographic_3d'
+var text = 'Loli Killers'
+
+lolkilScraper.textpro.light_style(type, text)
 .then(response => {
   console.log(response)
 })
@@ -1494,13 +1500,12 @@ lolkilScraper.textpro.gradient_neon_light_text('Loli Killers')
 ```json
 {
   result: {
-    img: 'https://textpro.me/images/user_image/2022/09/632136e21c724.jpg'
+    img: 'https://textpro.me/images/user_image/2022/09/63227636c9b4b.jpg'
   }
 }
 ```
-#### Example
-[Lk](https://telegra.ph/file/ea71435e0f4aafbbfe9dc.jpg)
-
+#### Example Image
+<img src="https://telegra.ph/file/eacecb1f1aede14b79051.jpg" height="170"></img>
 </details>
 
 # NOTE
