@@ -93,23 +93,22 @@ lolkilScraper.anime.otakudesu_search('one piece')
 {
   result: [
     {
-      thumbnail: 'https://otakudesu.watch/wp-content/uploads/2021/05/One-Piece-Sub-Indo.jpg'
+      thumbnail: 'https://otakudesu.lol/wp-content/uploads/2021/05/One-Piece-Sub-Indo.jpg'
     },
     {
-      title: 'One Piece',
-      japan: 'ONE PIECE',
-      rate: '8.54',
-      producer: 'Fuji TV, TAP, Shueisha',
-      type: 'TV',
-      status: 'Ongoing',
-      episode: '?',
-      duration: '24 Menit',
-      release: 'Oct 20, 1999',
-      studio: 'Toei Animation',
-      genre: 'Action, Adventure, Comedy, Drama, Fantasy, Shounen, Super Power',
-      desc: 'Dulu, ada seorang bajak laut terkenal di seluruh lautan bernama Gol D\n' +
-        ' Roger. Ia merupakan seorang raja bajak laut yang telah berlayar mengarungi seluruh Grand Line, sayangnya ia ditangkap pemerintah dan telah dieksekusi mati. Sesaat sebelum kematiannya, Ia mengumumkan kepada dunia bahwa dirinya menyimpan sebuah harta karun bernama One Piece, sebuah harta karun yang kini menjadi incaran seluruh bajak laut yang ada di dunia.Di Era Bajak Laut saat ini, ada seorang remaja bernama Monkey D. Luffy yang memiliki cita-cita untuk menjadi seorang Raja Bajak Laut. Namun Luffy sadar bahwa ia tidak bisa melakukannya sendiri, sembari dalam perjalanan ia juga mencari kru dan bertemu dengan teman-temannya yang baru. Berbeda dengan bajak laut lain yang ganas dan jahat, Luffy bersama teman-temannya berlayar murni atas dasar petualangan serta mencari tempat tempat baru yang akan muncul di hadapan mereka.Di perjalanan inilah cerita mereka dimulai, mampukan Luffy bersama teman-temannya mencapai impian mereka?(Info: Episode sebelumnya akan ditambahkan secara berkala)',
-      batch: 'https://otakudesu.watch/lengkap/wpoiec-sub-indo-p35/'
+      title: String,
+      japan: String,
+      rate: Number,
+      producer: String,
+      type: String,
+      status: String,
+      episode: Number,
+      duration: String,
+      release: String,
+      studio: String,
+      genre: String,
+      desc: String,
+      batch: String
     }
   ]
 }
@@ -118,7 +117,7 @@ lolkilScraper.anime.otakudesu_search('one piece')
 <details><summary><b>My Anime List Top Airing</b></summary><br>
 
 ```js
-lolkilScraper.anime.mal_top_airing()
+lolkilScraper.anime.MAL_TOP_AIRING()
 .then(response => {
   console.log(response)
 })
@@ -131,53 +130,53 @@ lolkilScraper.anime.mal_top_airing()
 {
   result: [
     {
-      rank: '1',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1566/122794.jpg?s=1dd290c4b0bc3df1083c456064109e2f',
-      title: 'Kingdom 4th Season',
-      score: '8.81',
-      link: 'https://myanimelist.net/anime/50160/Kingdom_4th_Season'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '2',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1864/122519.jpg?s=17612a9ecb307994db4ced0a85774a37',
-      title: 'Made in Abyss: Retsujitsu no Ougonkyou',
-      score: '8.80',
-      link: 'https://myanimelist.net/anime/41084/Made_in_Abyss__Retsujitsu_no_Ougonkyou'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '3',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/6/73245.jpg?s=f792b8c9e28534ae455d06b15e686a14',
-      title: 'One Piece',
-      score: '8.66',
-      link: 'https://myanimelist.net/anime/21/One_Piece'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '4',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1120/120796.jpg?s=a52ff27a36d2c027953221d2627c898e',
-      title: 'Summertime Render',
-      score: '8.49',
-      link: 'https://myanimelist.net/anime/47194/Summertime_Render'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '5',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1530/120110.jpg?s=9b3fb5bfd6e183b3482cd6e245e9270a',
-      title: 'Overlord IV',
-      score: '8.33',
-      link: 'https://myanimelist.net/anime/48895/Overlord_IV'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '6',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1259/110227.jpg?s=08c77f58ab974a8fc36af5e2eac9040a',
-      title: 'Holo no Graffiti',
-      score: '8.32',
-      link: 'https://myanimelist.net/anime/44042/Holo_no_Graffiti'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '7',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1392/124401.jpg?s=e85f33c9c344cfcfb5e3618fbe849240',
-      title: 'Lycoris Recoil',
-      score: '8.28',
-      link: 'https://myanimelist.net/anime/50709/Lycoris_Recoil'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     }
   ]
 }
@@ -186,7 +185,7 @@ lolkilScraper.anime.mal_top_airing()
 <details><summary><b>My Anime List Top Anime</b></summary><br>
 
 ```js
-lolkilScraper.anime.mal_top_anime()
+lolkilScraper.anime.MAL_TOP_ANIME()
 .then(response => {
   console.log(response)
 })
@@ -199,53 +198,53 @@ lolkilScraper.anime.mal_top_anime()
 {
   result: [
     {
-      rank: '1',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1223/96541.jpg?s=faffcb677a5eacd17bf761edd78bfb3f',
-      title: 'Fullmetal Alchemist: Brotherhood',
-      score: '9.13',
-      link: 'https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '2',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1160/122627.jpg?s=9b41450e9598d10c97fb4eeb7cca3737',
-      title: 'Kaguya-sama wa Kokurasetai: Ultra Romantic',
-      score: '9.12',
-      link: 'https://myanimelist.net/anime/43608/Kaguya-sama_wa_Kokurasetai__Ultra_Romantic'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '3',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/3/72078.jpg?s=e9537ac90c08758594c787ede117f209',
-      title: 'Gintama°',
-      score: '9.08',
-      link: 'https://myanimelist.net/anime/28977/Gintama°'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '4',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/5/73199.jpg?s=97b97d568f25a02cf5a22dda13b5371f',
-      title: 'Steins;Gate',
-      score: '9.08',
-      link: 'https://myanimelist.net/anime/9253/Steins_Gate'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '5',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1517/100633.jpg?s=4540a01b5883647ade494cd28392f100',
-      title: 'Shingeki no Kyojin Season 3 Part 2',
-      score: '9.07',
-      link: 'https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '6',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/4/50361.jpg?s=b3a061db8c3d42a055d58f9df1f3dac7',
-      title: "Gintama'",
-      score: '9.05',
-      link: 'https://myanimelist.net/anime/9969/Gintama'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     },
     {
-      rank: '7',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1988/113791.jpg?s=e12ba155fe4a7beff571a5010d8214b2',
-      title: 'Gintama: The Final',
-      score: '9.05',
-      link: 'https://myanimelist.net/anime/39486/Gintama__The_Final'
+      rank: Number,
+      thumbnail: String,
+      title: String,
+      score: Number,
+      link: String
     }
   ]
 }
@@ -257,7 +256,7 @@ lolkilScraper.anime.mal_top_anime()
 > - (query) *type **String***
 
 ```js
-lolkilScraper.anime.mal_search_anime('one piece')
+lolkilScraper.anime.MAL_SEARCH_ANIME('one piece')
 .then(response => {
   console.log(response)
 })
@@ -270,76 +269,76 @@ lolkilScraper.anime.mal_search_anime('one piece')
 {
   result: [
     {
-      title: 'One Piece Film: Gold',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/12/81081.jpg?s=4372756d851a7e1807a572817ac16574',
-      url: 'https://myanimelist.net/anime/31490/One_Piece_Film__Gold',
-      type: 'Movie',
-      episode: '1',
-      score: '7.09'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece Film: Z',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/6/44297.jpg?s=ab00c4fc2882d3bb72c1985ada0af886',
-      url: 'https://myanimelist.net/anime/12859/One_Piece_Film__Z',
-      type: 'Movie',
-      episode: '1',
-      score: '7.91'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/6/73245.jpg?s=f792b8c9e28534ae455d06b15e686a14',
-      url: 'https://myanimelist.net/anime/21/One_Piece',
-      type: 'Movie',
-      episode: '1',
-      score: '8.15'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece Movie 14: Stampede',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1221/100550.jpg?s=0a8df0aea5d9091e628bab80b0dfae26',
-      url: 'https://myanimelist.net/anime/38234/One_Piece_Movie_14__Stampede',
-      type: 'TV',
-      episode: '-',
-      score: '8.66'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece 3D: Mugiwara Chase',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/4/32455.jpg?s=991795b9931d468dd5e49ab8249ba9a8',
-      url: 'https://myanimelist.net/anime/9999/One_Piece_3D__Mugiwara_Chase',
-      type: 'Movie',
-      episode: '1',
-      score: '8.24'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece Film: Strong World',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1192/116784.jpg?s=ab8dc5d03ecadd39b7b9ddff4cfbfb82',
-      url: 'https://myanimelist.net/anime/4155/One_Piece_Film__Strong_World',
-      type: 'Movie',
-      episode: '1',
-      score: '6.97'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece Movie 04: Dead End no Bouken',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/1100/116767.jpg?s=a5923a15c9ba56da9bb272f8440543c1',
-      url: 'https://myanimelist.net/anime/462/One_Piece_Movie_04__Dead_End_no_Bouken',
-      type: 'Movie',
-      episode: '1',
-      score: '8.10'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece: Adventure of Nebulandia',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/5/77050.jpg?s=8018a90371f9663e8a39ffc283fb5adc',
-      url: 'https://myanimelist.net/anime/32051/One_Piece__Adventure_of_Nebulandia',
-      type: 'Movie',
-      episode: '1',
-      score: '7.54'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     },
     {
-      title: 'One Piece Movie 09: Episode of Chopper Plus - Fuyu ni Saku, Kiseki no Sakura',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/anime/12/25414.jpg?s=b6f41293d9baad9499b085e1abaca011',
-      url: 'https://myanimelist.net/anime/3848/One_Piece_Movie_09__Episode_of_Chopper_Plus_-_Fuyu_ni_Saku_Kiseki_no_Sakura',
-      type: 'Special',
-      episode: '1',
-      score: '7.26'
+      title: String,
+      thumbnail: String,
+      url: String,
+      type: String,
+      episode: Number,
+      score: Number
     }
   ]
 }
@@ -351,7 +350,7 @@ lolkilScraper.anime.mal_search_anime('one piece')
 > - (query) *type **String***
 
 ```js
-lolkilScraper.anime.mal_search_manga('one piece')
+lolkilScraper.anime.MAL_SEARCH_MANGA('one piece')
 .then(response => {
   console.log(response)
 })
@@ -364,178 +363,76 @@ lolkilScraper.anime.mal_search_manga('one piece')
 {
   result: [
     {
-      title: 'One Piece',
-      type: 'Manga',
-      vol: '-',
-      score: '9.20',
-      link: 'https://myanimelist.net/manga/13/One_Piece',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/2/253146.jpg?s=e5286481ed2b4c11ab39d1420110dc43'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'One Piece Party',
-      type: 'Manga',
-      vol: '7',
-      score: '7.26',
-      link: 'https://myanimelist.net/manga/86972/One_Piece_Party',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/2/165199.jpg?s=3681113d712618dfe56c120656894a46'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'One Piece: Strong World',
-      type: 'One-shot',
-      vol: '-',
-      score: '8.11',
-      link: 'https://myanimelist.net/manga/17152/One_Piece__Strong_World',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/1/25743.jpg?s=6d9e0a31fd6e1d0f4c136ea0ff0294fa'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'One Piece: Episode A',
-      type: 'Manga',
-      vol: '2',
-      score: '8.16',
-      link: 'https://myanimelist.net/manga/128594/One_Piece__Episode_A',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/2/266074.jpg?s=c24cf1aacdc51dcad5af27fcf2637050'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'One Piece: Vivi no Bouken',
-      type: 'One-shot',
-      vol: '-',
-      score: '7.39',
-      link: 'https://myanimelist.net/manga/139972/One_Piece__Vivi_no_Bouken',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/2/249763.jpg?s=204680ec1e989fc8bfd44afdbb9c1350'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'One Piece Novel: A',
-      type: 'Light Novel',
-      vol: '2',
-      score: '7.93',
-      link: 'https://myanimelist.net/manga/127114/One_Piece_Novel__A',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/2/232216.jpg?s=77c7ab1089d3adb310bf8a3d694d829b'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'One Piece: Loguetown-hen',
-      type: 'Light Novel',
-      vol: '1',
-      score: '7.03',
-      link: 'https://myanimelist.net/manga/94534/One_Piece__Loguetown-hen',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/1/167765.jpg?s=08ead37a0df1f906cdfe94106aa6478c'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'One Piece: Roronoa Zoro, Umi ni Chiru',
-      type: 'One-shot',
-      vol: '-',
-      score: '7.63',
-      link: 'https://myanimelist.net/manga/120865/One_Piece__Roronoa_Zoro_Umi_ni_Chiru',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/3/265729.jpg?s=c3b7a9ecd32291f9d775d17c3c55f82a'
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     },
     {
-      title: 'Gekijouban One Piece: Stampede',
-      type: 'Light Novel',
-      vol: '1',
-      score: '8.01',
-      link: 'https://myanimelist.net/manga/120656/Gekijouban_One_Piece__Stampede',
-      thumbnail: 'https://cdn.myanimelist.net/r/50x70/images/manga/1/230439.jpg?s=964b077dd0feb25b8b8407caf8ec08e3'
-    }
-  ],
-}
-```
-</details>
-<details><summary><b>My Anime List Search Character</b></summary><br>
-
-> #### Required parameters
-> - (query) *type **String***
-
-```js
-lolkilScraper.anime.mal_search_character('luffy')
-.then(response => {
-  console.log(response)
-})
-.catch(error => {
-  //error message
-}
-```
-#### output
-```json
-{
-  result: [
-    {
-      name: 'Monkey D., Luffy',
-      alias_name: '(Mugiwara, Straw Hat, Lucy, Luffytaro)',
-      url: 'https://myanimelist.net/character/40/Luffy_Monkey_D',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/9/310307.jpg?s=3a27ab33bee665febfba970f24f203ba',
-      anime: 'Nissan Serena x One Piece 3D: Mugiwara Chase - Sennyuu!! Sauzando Sanii-gou',
-      manga: 'One Piece: Episode of Merry - Mou Hitori no Nakama no Monogatari'
-    },
-    {
-      name: 'Yamamoto, Luffy',
-      alias_name: '',
-      url: 'https://myanimelist.net/character/207833/Luffy_Yamamoto',
-      thumbnail: 'https://cdn.myanimelist.net/images/questionmark_23.gif',
-      anime: '',
-      manga: ''
-    },
-    {
-      name: 'Shishido, Jouichirou',
-      alias_name: '(Fluffy)',
-      url: 'https://myanimelist.net/character/208064/Jouichirou_Shishido',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/13/469123.jpg?s=ae43b5040d133c9d7b5d01cbd3f59cec',
-      anime: '',
-      manga: ''
-    },
-    {
-      name: 'Piwi',
-      alias_name: '(The Green Bird of Happiness, Fluffy)',
-      url: 'https://myanimelist.net/character/155084/Piwi',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/3/441386.jpg?s=d69f5a01aa1cca37680ada6848f64240',
-      anime: 'Helck',
-      manga: ''
-    },
-    {
-      name: 'Wada, Akinori',
-      alias_name: '(Sweet Pretty Lonely Heart Fluffybro)',
-      url: 'https://myanimelist.net/character/152561/Akinori_Wada',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/11/333941.jpg?s=ef6ccd0fbeac8670adecf9c50a16614a',
-      anime: '',
-      manga: ''
-    },
-    {
-      name: 'Koyama, Nami',
-      alias_name: '',
-      url: 'https://myanimelist.net/character/207834/Nami_Koyama',
-      thumbnail: 'https://cdn.myanimelist.net/images/questionmark_23.gif',
-      anime: '',
-      manga: ''
-    },
-    {
-      name: 'Helmeppo',
-      alias_name: '',
-      url: 'https://myanimelist.net/character/12362/Helmeppo',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/14/48661.jpg?s=ea8c21d6e7b875553a5b547f7d231a5d',
-      anime: 'One Piece: Yume no Soccer Ou!',
-      manga: 'One Piece Film: Z'
-    },
-    {
-      name: 'Gina',
-      alias_name: '',
-      url: 'https://myanimelist.net/character/22414/Gina',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/6/53322.jpg?s=21e974e1d4a04aaac7a92ae4984e8376',
-      anime: 'One Piece',
-      manga: ''
-    },
-    {
-      name: 'Makino',
-      alias_name: '',
-      url: 'https://myanimelist.net/character/21210/Makino',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/6/49465.jpg?s=359c7644512a10d7cefef3f03bda327f',
-      anime: 'One Piece',
-      manga: 'One Piece: Episode of Luffy - Hand Island no Bouken'
-    },
-    {
-      name: 'Daigin',
-      alias_name: '',
-      url: 'https://myanimelist.net/character/161873/Daigin',
-      thumbnail: 'https://cdn.myanimelist.net/r/42x62/images/characters/13/369186.jpg?s=ac234c957c96c9aa52c6464acca318c0',
-      anime: 'One Piece',
-      manga: ''
+      title: String,
+      type: String,
+      vol: Number,
+      score: Number,
+      link: String,
+      thumbnail: String
     }
   ]
 }
@@ -841,13 +738,13 @@ lolkilScraper.download.youtube_play_mp4('fungi look alive')
 
 ### Convert
 
-<details><summary><b>Emoji To Image/Png</b></summary><br>
+<details><summary><b>Emoji To Image</b></summary><br>
 
 > #### Required parameters
 > - (emoji) *type **String***
 
 ```js
-lolkilScraper.convert.emoji_to_png('🔥')
+lolkilScraper.convert.EMOJI_TO_IMAGE('🔥')
 .then(response => {
   console.log(response)
 })
@@ -859,24 +756,24 @@ lolkilScraper.convert.emoji_to_png('🔥')
 ```json
 {
   result: {
-    apple: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/fire_1f525.png',
-    google: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/313/fire_1f525.png',
-    samsung: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/samsung/320/fire_1f525.png',
-    microsoft: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/310/fire_1f525.png',
-    whatsapp: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/whatsapp/326/fire_1f525.png',
-    twitter: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/322/fire_1f525.png',
-    facebook: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/327/fire_1f525.png',
-    jooxPixel: 'https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/fire_1f525.png',
-    openemoji: 'https://emojipedia-us.s3.amazonaws.com/source/skype/289/fire_1f525.png',
-    emojidex: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/joypixels/340/fire_1f525.png',
-    messanger: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/toss-face/342/fire_1f525.png',
-    LG: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/openmoji/338/fire_1f525.png',
-    HTC: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/noto-emoji/341/fire_1f525.jpg',
-    mozilla: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/sony/336/fire_1f525.png',
-    softbank: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/emojidex/112/fire_1f525.png',
-    docomo: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/65/fire_1f525.png',
-    KDDI: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/lg/307/fire_1f525.png'
-  },
+    apple: String,
+    google: String,
+    samsung: String,
+    microsoft: String,
+    whatsapp: String,
+    twitter: String,
+    facebook: String,
+    jooxPixel: String,
+    openemoji: String,
+    emojidex: String,
+    messanger: String,
+    LG: String,
+    HTC: String,
+    mozilla: String,
+    softbank: String,
+    docomo: String,
+    KDDI: string
+  }
 }
 ```
 </details>
