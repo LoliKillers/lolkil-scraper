@@ -48,7 +48,7 @@ var lolkilScraper = require('lolkil-scraper')
 > - (query) *type **String***
 
 ```js
-lolkilScraper.anime.anoboy_search('one piece')
+lolkilScraper.anime.ANOBOY_SEARCH('one piece')
 .then(response => {
   console.log(response)
 })
@@ -59,15 +59,17 @@ lolkilScraper.anime.anoboy_search('one piece')
 #### output
 ```json
 {
+  code: Number,
+  message: String,
   result: {
     download_sd: {
-      m4u: 'https://www.mp4upload.com/q5q1acqejda5',
-      zippy: 'https://www60.zippyshare.com/v/WfIWaAgk/file.html',
-      mirror: 'https://www.mirrored.to/files/E1U1O24L/One_Piece_-_1032.360.mp4_links'
+      m4u: String,
+      zippy: String,
+      mirror: String
     },
-    thumbnail: 'https://4.bp.blogspot.com/--vECG2T4EDs/XavTXQdeo8I/AAAAAAAABWg/m5JcbW9hosgX_yU8t2I3XEYQaheB5LxiQCLcBGAsYHQ/s240/04-onepiece.jpeg',
-    title: 'One Piece Subtitle Indonesia',
-    synopsis: 'Gol D. Roger dikenal sebagai “Raja Bajak Laut,” terkuat dan paling terkenal yang telah berlayar di Grand Line. Penangkapan dan kematian Roger oleh Pemerintah Dunia membawa perubahan di seluruh dunia. Kata-kata terakhirnya sebelum kematiannya mengungkapkan keberadaan harta terbesar di dunia, yaitu One Piece. kata2 tersebut membawa dan menjadi Era bajak laut, siapapun pria yang bermimpi untuk menemukan One Piece-yang menjanjikan jumlah yang tidak terbatas dari kekayaan dan ketenaran-dan sangat mungkin puncak kemuliaan dan gelar Raja Bajak Laut.'
+    thumbnail: String,
+    title: String,
+    synopsis: String
   }
 }
 ```
